@@ -149,7 +149,6 @@ While light is on:
 
         swap the item
 
-
         ****UPDATE****
 
         I changed my approach, decided to go with for loop nested within for loop
