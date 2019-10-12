@@ -92,12 +92,55 @@ class SortingRobot:
         """
         return self._light == "ON"
 
+    """
+Polya
+
+Understand
+We need to use Bubble Sort which will start at the beggining in the list and compare each elements that next on the right. If the neighbour is smaller, we swap the neighbours.
+
+We might need to loop over the list more than once if the whole list is not sorted. Once we loop over
+the list and every element is sorted, then we can break out of the loop
+
+We will set the robot light on to start the program and we will run the loop while light_is_on == True
+Once the list is sorted(we define the list as sorted when we loop through whole list and check each item)
+we will turn the light off using set_light_off method
+
+Bubble Sort has a average time complexity of O(n^2), quadratic algorithm usually consists of nested loop
+We will have to use nested loops example
+while
+  while
+  while
+
+Possible plan:
+
+While light is on:
+   while can move right:
+     move right
+     if compare items == -1:  if item is less than item in front of us, swap
+                               then we will move the bigger item along
+        swap the item
+
+    while can move left:
+      move left
+      if compare items == 1:
+
+        swap the item
+
+"""
+
     def sort(self):
-        """
-        Sort the robot's list.
-        """
-        # Fill this out
-        pass
+        while :
+            while self.can_move_right():
+                self.move_right()
+                if self.compare_item() == -1:
+                   self.swap_item()
+
+            while self.can_move_left():
+                self.move_left()
+                if self.compare_item() == 1:
+                    self.swap_item()
+
+
 
 
 if __name__ == "__main__":
@@ -108,5 +151,6 @@ if __name__ == "__main__":
 
     robot = SortingRobot(l)
 
+    robot.set_light_on()
     robot.sort()
     print(robot._list)

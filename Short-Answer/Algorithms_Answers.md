@@ -2,14 +2,12 @@
 
 ## Exercise I
 
-a)
+a) I think its O(n) because it will loop over each number and multiplying it 3x
 
 
-b)
+b) O(n log(n))
 
 
 c)
 
 ## Exercise II
-
-
