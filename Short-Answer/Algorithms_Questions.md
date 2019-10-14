@@ -17,7 +17,7 @@ b)  sum = 0
     for i in range(n):
       j = 1
       while j < n:
-        j *= 2
+        j= j * 2
         sum += 1
 ```
 
@@ -34,3 +34,9 @@ c)  def bunnyEars(bunnies):
 Suppose that you have an n-story building and plenty of eggs. Suppose also that an egg gets broken if it is thrown off floor f or higher, and doesn't get broken if dropped off a floor less than floor f. Devise a strategy to determine the value of f such that the number of dropped + broken eggs is minimized.
 
 Write out your proposed algorithm in plain English or pseudocode AND give the runtime complexity of your solution.
+
+
+The solution would be to try dropping an egg from every floor and recursively calculate the minimum number of droppings needed in worst case. The floor which gives the minimum value in worst case is going to be part of the solution.
+
+Time complexity O(n^2)
+Space complexity O(n)

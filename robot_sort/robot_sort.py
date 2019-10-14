@@ -92,12 +92,14 @@ class SortingRobot:
         """
         return self._light == "ON"
 
-    def sort(self):
-        """
-        Sort the robot's list.
-        """
-        # Fill this out
-        pass
+    def sort(self,_list):
+        for i in range(len(_list)):
+            for j in range(0, len(_list)-i-1):
+                if  _list[j] > _list[j+1]:
+                    _list[j], _list[j+1] = _list[j+1], _list[j]
+
+        for i in range(len(_list)):
+            _list.append(_list[i])
 
 
 if __name__ == "__main__":
@@ -108,5 +110,53 @@ if __name__ == "__main__":
 
     robot = SortingRobot(l)
 
-    robot.sort()
+    robot.sort(l)
     print(robot._list)
+
+
+
+"""
+Polya
+
+Understand
+We need to use Bubble Sort which will start at the beggining in the list and compare each elements that next on the right. If the neighbour is smaller, we swap the neighbours.
+
+We might need to loop over the list more than once if the whole list is not sorted. Once we loop over
+the list and every element is sorted, then we can break out of the loop
+
+We will set the robot light on to start the program and we will run the loop while light_is_on == True
+Once the list is sorted(we define the list as sorted when we loop through whole list and check each item)
+we will turn the light off using set_light_off method
+
+Bubble Sort has a average time complexity of O(n^2), quadratic algorithm usually consists of nested loop
+We will have to use nested loops example
+while
+  while
+  while
+
+Possible plan:
+
+While light is on:
+   while can move right:
+     move right
+     if compare items == -1:  if item is less than item in front of us, swap
+                               then we will move the bigger item along
+        swap the item
+
+    while can move left:
+      move left
+      if compare items == 1:
+
+        swap the item
+
+        ****UPDATE****
+
+        I changed my approach, decided to go with for loop nested within for loop
+        it checks the numbers, if the number is greater than next one they will change places(swap)
+        And then I did for loop that appends each number in list and then I print the sorted list
+        I didn't need any methods in SortingRobot.
+
+        Robot can sort an array when robot_sort_py is run
+
+
+"""

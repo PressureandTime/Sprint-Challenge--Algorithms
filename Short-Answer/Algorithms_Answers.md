@@ -2,14 +2,12 @@
 
 ## Exercise I
 
-a)
+a) I think its O(n)
 
 
-b)
+b) O(n log(n))
 
 
-c)
+c) I thinks its O(n)
 
 ## Exercise II
-
-
