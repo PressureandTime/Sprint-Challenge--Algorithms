@@ -93,13 +93,9 @@ class SortingRobot:
         return self._light == "ON"
 
     def sort(self,_list):
-        for i in range(len(_list)):
-            for j in range(0, len(_list)-i-1):
-                if  _list[j] > _list[j+1]:
-                    _list[j], _list[j+1] = _list[j+1], _list[j]
+       pass
 
-        for i in range(len(_list)):
-            _list.append(_list[i])
+ 
 
 
 if __name__ == "__main__":

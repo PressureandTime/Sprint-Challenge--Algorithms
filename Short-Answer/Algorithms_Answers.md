@@ -2,12 +2,5 @@
 
 ## Exercise I
 
-a) I think its O(n)
-
-
-b) O(n log(n))
-
-
-c) I thinks its O(n)
 
 ## Exercise II
