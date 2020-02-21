@@ -36,7 +36,4 @@ Suppose that you have an n-story building and plenty of eggs. Suppose also that 
 Write out your proposed algorithm in plain English or pseudocode AND give the runtime complexity of your solution.
 
 
-The solution would be to try dropping an egg from every floor and recursively calculate the minimum number of droppings needed in worst case. The floor which gives the minimum value in worst case is going to be part of the solution.
 
-Time complexity O(n^2)
-Space complexity O(n)
