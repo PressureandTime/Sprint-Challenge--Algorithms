@@ -92,10 +92,11 @@ class SortingRobot:
         """
         return self._light == "ON"
 
-    def sort(self,_list):
-       pass
+    def sort(self):
+       self.swap_item()
+       print(self._position)
 
- 
+
 
 
 if __name__ == "__main__":
@@ -106,7 +107,7 @@ if __name__ == "__main__":
 
     robot = SortingRobot(l)
 
-    robot.sort(l)
+    robot.sort()
     print(robot._list)
 
 
