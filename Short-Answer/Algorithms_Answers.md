@@ -2,12 +2,10 @@
 
 ## Exercise I
 
-a) I think its O(n)
-
-
-b) O(n log(n))
-
-
-c) I thinks its O(n)
+a) Its O(n)
+b) Its O(n Log(n))
+c) Its O(n)
 
 ## Exercise II
+
+I think we should use binary search for this problem and run time for complexity is O(Log(n))
